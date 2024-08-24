@@ -8,4 +8,4 @@ RUN npm i
 
 EXPOSE 80
 
-ENTRYPOINT ["--env-file=.env.production","npm", "run", "start"]
+ENTRYPOINT ["npm", "run", "start"]

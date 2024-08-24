@@ -1,4 +1,4 @@
-FROM node:latest as BUILD
+FROM node:latest 
 
 WORKDIR backend/
 
@@ -8,4 +8,4 @@ RUN npm i
 
 EXPOSE 80
 
-ENTRYPOINT ["npm", "run", "start"]
+ENTRYPOINT ["--env-file=.env.production","npm", "run", "start"]
